@@ -3292,7 +3292,7 @@ body {
     font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-	background: url(img/main-bg.jpg) top left no-repeat, url(img/main-bg-2.jpg) bottom right no-repeat;
+	background: url(https://beha.tech/img/main-bg.jpg) top left no-repeat, url(https://beha.tech/img/main-bg-2.jpg) bottom right no-repeat;
     background-color: #121212;
 }
 
