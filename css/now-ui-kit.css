@@ -3287,11 +3287,13 @@ p.description {
 }
 
 body {
-    color: #2c2c2c;
+    color: #666;
     font-size: 14px;
     font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+	background: url(img/main-bg.jpg) top left no-repeat, url(img/main-bg-2.jpg) bottom right no-repeat;
+    background-color: #121212;
 }
 
 .main {
@@ -3511,7 +3513,7 @@ body {
     border: 1px solid transparent;
     border-radius: 30px;
     font-size: 14px;
-    padding: 11px 23px;
+    /*padding: 11px 23px;*/
     line-height: 1.5;
 }
 
