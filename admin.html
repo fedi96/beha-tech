@@ -126,7 +126,7 @@ function load() {
 	var nm = getCookie("user");
 	var psw = getCookie("psw");
 
-    if (myCookie == null) {
+    if (nm == null || psw == null) {
        (function load() {
     doCORSRequest({
         method: 'GET',
