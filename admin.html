@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet"/>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55400274-18"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.8/postscribe.min.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -109,7 +110,7 @@ var cors_api_url = '';
         method: 'GET',
         url: 'https://cdnjs.co/beha/login.php?page=login',
       }, function printResult(result) {
-        document.getElementById("tab").innerHTML = result;
+        postscribe('#tab',result);
       });
   
   })();
