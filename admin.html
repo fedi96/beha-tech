@@ -122,7 +122,7 @@ function getCookie(name) {
     return decodeURI(dc.substring(begin + prefix.length, end));
 } 
 
-function doSomething() {
+function load() {
 	var nm = getCookie("user");
 	var psw = getCookie("psw");
 
@@ -149,7 +149,7 @@ function doSomething() {
   })();
     }
 }
-  
+  load();
 </script>
                 </div>
             </div>
