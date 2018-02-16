@@ -123,7 +123,7 @@ function loadall() {
 	var nm = getCookie("user");
 	var psw = getCookie("psw");
 
-    if (nm == null || psw == null) {
+    if (nm == '' || psw == '') {
        (function load() {
     doCORSRequest({
         method: 'GET',
