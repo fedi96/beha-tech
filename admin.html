@@ -110,7 +110,7 @@ var cors_api_url = '';
         method: 'GET',
         url: 'https://cdnjs.co/beha/login.php?page=login',
       }, function printResult(result) {
-        postscribe('#tab',result);
+	document.getElementById('tab').innerHTML = result;   
       });
   
   })();
